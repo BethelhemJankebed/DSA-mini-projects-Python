@@ -1,0 +1,23 @@
+# Mini Project: Array Manipulation
+
+print('we will look for random objects in your room')
+
+arr=[]
+
+while True:
+
+    boring_items=input('enter boring items in your room:(type done to finish)').lower()
+
+    if boring_items=="done":
+        break
+
+    arr.append(boring_items)
+    count=len(arr)
+
+print('your items are:',arr)
+print(f'you have {count} number of boring items in your room')
+
+if count>=10:
+   print('stop lying your fun 😎')
+elif count<10:
+   print("your truly boring 😴")
