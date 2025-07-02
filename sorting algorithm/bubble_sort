@@ -1,0 +1,16 @@
+ array=[]
+def sorting(arr):
+    for i in range(len(arr)):
+        for j in range(0,len(arr)-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+while True :
+    num=input('enter the number in the arrays(type done to exit): ').lower()
+    if num !='done':
+        array.append(num)
+        sorting(array)
+    else:
+        break
+print(array)
+ 
+ 
